@@ -4,7 +4,13 @@ export default function Home() {
   return (
     <div>
       <p>portfolio app</p>
-      <Button>Click me</Button>
+      <Button
+        style={{
+          background: 'var(--button-gradient)',
+        }}
+      >
+        Click me
+      </Button>
     </div>
   );
 }
