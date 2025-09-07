@@ -29,6 +29,9 @@ export default function RootLayout({
       <body
         style={{
           backgroundImage: 'url(' + lightBodyBackground.src + ')',
+          backgroundRepeat: 'no-repeat',
+          minHeight: '100vh',
+          backgroundAttachment: 'fixed',
         }}
         className={`${geistSans.variable} ${inter.className} antialiased`}
       >
