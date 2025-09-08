@@ -11,6 +11,10 @@ import { technologies } from '@/constants/technologies';
 import Image from 'next/image';
 import moonIcon from '../assets/moonIcon.png';
 import usIcon from '../assets/usIcon.png';
+import orms from '@/assets/posts/orms.png';
+import eua2025 from '@/assets/about/eua2025.png';
+import rome from '@/assets/about/rome.png';
+import love from '@/assets/about/love.png';
 
 export default function Home() {
   return (
@@ -89,6 +93,54 @@ export default function Home() {
           {posts.map((posts) => (
             <Posts key={posts.name} name={posts.name} image={posts.image} />
           ))}
+        </ul>
+
+        <div className="mt-20">
+          <SecondTitle text="Um pouco de mim" />
+        </div>
+
+        <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
+          <li className="flex h-[300px] items-center lg:h-full">
+            <div className="grid min-h-full w-full grid-cols-2 grid-rows-2 gap-8">
+              <div className="relative col-span-1 row-span-2">
+                <Image
+                  src={eua2025}
+                  alt="#EUA 2025"
+                  fill
+                  sizes="100%"
+                  className="rounded-3xl border border-[##dbdbdb] object-cover shadow-md dark:border-[#2B2B2B]"
+                />
+              </div>
+              <div className="relative col-span-1 row-span-1">
+                <Image
+                  src={rome}
+                  alt="Roma"
+                  fill
+                  sizes="100%"
+                  className="rounded-3xl border border-[##dbdbdb] object-cover shadow-md lg:object-contain dark:border-[#2B2B2B]"
+                />
+              </div>
+              <div className="relative col-span-1 row-span-1">
+                <Image
+                  src={love}
+                  alt="Casamento"
+                  fill
+                  sizes="100%"
+                  className="rounded-3xl border border-[##dbdbdb] object-cover shadow-md lg:object-contain dark:border-[#2B2B2B]"
+                />
+              </div>
+            </div>
+          </li>
+
+          <li className="relative aspect-square w-full">
+            <Image
+              src={orms}
+              alt="Teste"
+              fill
+              sizes="100%"
+              className="rounded-3xl border border-[##dbdbdb] shadow-md transition-all duration-200 hover:cursor-pointer hover:opacity-90 hover:shadow-lg dark:border-[#2B2B2B]"
+            />
+          </li>
         </ul>
       </section>
     </main>
