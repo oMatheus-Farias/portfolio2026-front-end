@@ -6,6 +6,7 @@ import rome from '@/assets/about/rome.png';
 import { MePicture } from '@/components/MePicture';
 import { Posts } from '@/components/Posts';
 import { Projects } from '@/components/Projects';
+import { ReturnToTopButton } from '@/components/ReturnToTopButton';
 import { SecondTitle } from '@/components/SecondTitle';
 import { SocialCards, SocialCardsTitle } from '@/components/SocialCards';
 import { Technologies } from '@/components/Technologies';
@@ -14,7 +15,6 @@ import { Button } from '@/components/ui/Button';
 import { posts } from '@/constants/posts';
 import { projects } from '@/constants/projects';
 import { technologies } from '@/constants/technologies';
-import { CircleArrowUp } from 'lucide-react';
 import Image from 'next/image';
 import { useRef } from 'react';
 import moonIcon from '../assets/moonIcon.png';
@@ -192,10 +192,7 @@ export default function Home() {
 
       <footer className="mt-14 flex w-full flex-col-reverse items-center justify-center gap-4 sm:flex-row lg:mt-28 lg:ml-auto lg:justify-end lg:gap-8">
         <p className="text-sm text-[#848484] lg:text-base">© {currentYear} - Matheus Neves</p>
-        <button className="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-[#848484] transition-all duration-200 hover:cursor-pointer hover:bg-gray-100 hover:text-[#252525] hover:shadow-md/5 lg:rounded-lg lg:text-base">
-          <CircleArrowUp className="h-4 w-4" />
-          Voltar ao topo
-        </button>
+        <ReturnToTopButton />
       </footer>
     </div>
   );
