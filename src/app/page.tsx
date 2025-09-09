@@ -3,6 +3,7 @@
 import eua2025 from '@/assets/about/eua2025.png';
 import love from '@/assets/about/love.png';
 import rome from '@/assets/about/rome.png';
+import { DownloadResumeButton } from '@/components/DownloadResumeButton';
 import { MePicture } from '@/components/MePicture';
 import { Posts } from '@/components/Posts';
 import { Projects } from '@/components/Projects';
@@ -11,7 +12,6 @@ import { SecondTitle } from '@/components/SecondTitle';
 import { SocialCards, SocialCardsTitle } from '@/components/SocialCards';
 import { Technologies } from '@/components/Technologies';
 import { TopButton } from '@/components/TopButton';
-import { Button } from '@/components/ui/Button';
 import { posts } from '@/constants/posts';
 import { projects } from '@/constants/projects';
 import { technologies } from '@/constants/technologies';
@@ -67,14 +67,7 @@ export default function Home() {
             </div>
           </div>
 
-          <Button
-            style={{
-              background: 'var(--button-gradient)',
-            }}
-            className="hidden w-fit lg:block"
-          >
-            📄 Baixar currículo
-          </Button>
+          <DownloadResumeButton />
         </section>
 
         <section className="-mt-12 flex w-full max-w-[750px] flex-col lg:mt-0 lg:ml-auto lg:max-w-[550px] xl:max-w-[600px]">
