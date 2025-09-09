@@ -3,7 +3,6 @@ import './globals.css';
 
 import type { Metadata } from 'next';
 import { Geist, Inter } from 'next/font/google';
-import bodyBackground from '../assets/bodyBackground.png';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,15 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body
-        style={{
-          backgroundImage: 'url(' + bodyBackground.src + ')',
-          backgroundRepeat: 'no-repeat',
-          minHeight: '100vh',
-          backgroundAttachment: 'fixed',
-        }}
-        className={`${geistSans.variable} ${inter.className} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${inter.className} pattern-bg antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

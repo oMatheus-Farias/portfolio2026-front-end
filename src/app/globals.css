@@ -126,6 +126,20 @@ body {
   pointer-events: none;
 }
 
+.pattern-bg {
+  --dot-color: #f7f7f7;
+  --bg-color: #fff;
+  background-color: var(--bg-color);
+  background-image: radial-gradient(circle, var(--dot-color) 2px, transparent 2.5px);
+  background-size: 24px 24px;
+  background-attachment: fixed;
+}
+
+.dark .pattern-bg {
+  --dot-color: #292929;
+  --bg-color: #252525;
+}
+
 @keyframes shine-move {
   0% {
     left: -150%;
