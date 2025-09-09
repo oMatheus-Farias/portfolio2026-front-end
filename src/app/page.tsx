@@ -1,9 +1,8 @@
-'use client';
-
 import eua2025 from '@/assets/about/eua2025.png';
 import love from '@/assets/about/love.png';
 import rome from '@/assets/about/rome.png';
 import { DownloadResumeButton } from '@/components/DownloadResumeButton';
+import { HtmlClassVideo } from '@/components/HtmlClassVideo';
 import { MePicture } from '@/components/MePicture';
 import { Posts } from '@/components/Posts';
 import { Projects } from '@/components/Projects';
@@ -16,7 +15,6 @@ import { posts } from '@/constants/posts';
 import { projects } from '@/constants/projects';
 import { technologies } from '@/constants/technologies';
 import Image from 'next/image';
-import { useRef } from 'react';
 import moonIcon from '../assets/moonIcon.png';
 import githubIcon from '../assets/social/gitHubIcon.png';
 import gmailIcon from '../assets/social/gmailIcon.png';
@@ -26,7 +24,6 @@ import youtubeIcon from '../assets/social/youtubeIcon.png';
 import usIcon from '../assets/usIcon.png';
 
 export default function Home() {
-  const videoRef = useRef<HTMLVideoElement>(null);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -139,22 +136,7 @@ export default function Home() {
             </li>
 
             <li className="relative aspect-square w-full">
-              <video
-                ref={videoRef}
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                className="h-full rounded-3xl border border-[##dbdbdb] object-cover shadow-md dark:border-[#2B2B2B]"
-                style={{
-                  filter: 'brightness(0.8)',
-                  imageRendering: 'auto',
-                }}
-              >
-                <source src="/videos/html-class.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <HtmlClassVideo />
             </li>
           </ul>
 
