@@ -3,18 +3,21 @@ import Image, { StaticImageData } from 'next/image';
 interface IPostsProps {
   name: string;
   image: StaticImageData;
+  postUrl: string;
 }
 
-export function Posts({ name, image }: IPostsProps) {
+export function Posts({ name, image, postUrl }: IPostsProps) {
   return (
-    <li className="relative aspect-square w-full">
-      <Image
-        src={image}
-        alt={name}
-        fill
-        sizes="100%"
-        className="rounded-3xl border border-[##dbdbdb] shadow-md transition-all duration-200 hover:cursor-pointer hover:opacity-90 hover:shadow-lg dark:border-[#2B2B2B]"
-      />
-    </li>
+    <a href={postUrl} target="_blank" rel="noopener noreferrer">
+      <li className="relative aspect-square w-full">
+        <Image
+          src={image}
+          alt={name}
+          fill
+          sizes="100%"
+          className="rounded-3xl border border-[##dbdbdb] shadow-md transition-all duration-200 hover:cursor-pointer hover:opacity-90 hover:shadow-lg dark:border-[#2B2B2B]"
+        />
+      </li>
+    </a>
   );
 }

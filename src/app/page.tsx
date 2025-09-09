@@ -97,7 +97,7 @@ export default function Home() {
 
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             {posts.map((posts) => (
-              <Posts key={posts.name} name={posts.name} image={posts.image} />
+              <Posts key={posts.name} name={posts.name} image={posts.image} postUrl={posts.postUrl} />
             ))}
           </ul>
 
@@ -163,21 +163,33 @@ export default function Home() {
           </div>
 
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
-            <li className="relative aspect-square w-full">
-              <Image
-                src={instagramSocial}
-                alt="Instagram Social"
-                fill
-                sizes="100%"
-                className="rounded-3xl border border-[##dbdbdb] shadow-md transition-all duration-200 hover:cursor-pointer hover:opacity-90 hover:shadow-lg dark:border-[#2B2B2B]"
-              />
-            </li>
+            <a href="https://www.instagram.com/codestackoficial/" target="_blank" rel="noopener noreferrer" className="h-full w-full">
+              <li className="relative aspect-square w-full">
+                <Image
+                  src={instagramSocial}
+                  alt="Instagram Social"
+                  fill
+                  sizes="100%"
+                  className="rounded-3xl border border-[##dbdbdb] shadow-md transition-all duration-200 hover:cursor-pointer hover:opacity-90 hover:shadow-lg dark:border-[#2B2B2B]"
+                />
+              </li>
+            </a>
 
             <li className="grid grid-cols-2 grid-rows-2 gap-8">
-              <SocialCards title={SocialCardsTitle.LINKEDIN} subTitle="linkedin.com" image={linkedinIcon} />
-              <SocialCards title={SocialCardsTitle.GITHUB} subTitle="github.com" image={githubIcon} />
-              <SocialCards title={SocialCardsTitle.GMAIL} subTitle="mail.com" image={gmailIcon} />
-              <SocialCards title={SocialCardsTitle.YOUTUBE} subTitle="youtube.com" image={youtubeIcon} />
+              <SocialCards
+                title={SocialCardsTitle.LINKEDIN}
+                subTitle="linkedin.com"
+                image={linkedinIcon}
+                socialUrl="https://www.linkedin.com/in/matheusfariasdasneves/"
+              />
+              <SocialCards title={SocialCardsTitle.GITHUB} subTitle="github.com" image={githubIcon} socialUrl="https://github.com/oMatheus-Farias" />
+              <SocialCards title={SocialCardsTitle.GMAIL} subTitle="mail.com" image={gmailIcon} socialUrl="mailto:matheusfariasdasneves@gmail.com" />
+              <SocialCards
+                title={SocialCardsTitle.YOUTUBE}
+                subTitle="youtube.com"
+                image={youtubeIcon}
+                socialUrl="https://www.youtube.com/@odevmatheusfarias"
+              />
             </li>
           </ul>
         </section>
