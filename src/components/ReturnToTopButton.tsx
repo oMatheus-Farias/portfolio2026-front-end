@@ -1,4 +1,4 @@
-'use cliente';
+'use client';
 
 import { CircleArrowUp } from 'lucide-react';
 
