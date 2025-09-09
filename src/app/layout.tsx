@@ -1,8 +1,9 @@
+import { ThemeProvider } from '@/components/ThemeProvider';
 import './globals.css';
 
 import type { Metadata } from 'next';
 import { Geist, Inter } from 'next/font/google';
-import lightBodyBackground from '../assets/lightBodyBackground.webp';
+import bodyBackground from '../assets/bodyBackground.png';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -25,17 +26,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" suppressHydrationWarning>
       <body
         style={{
-          backgroundImage: 'url(' + lightBodyBackground.src + ')',
+          backgroundImage: 'url(' + bodyBackground.src + ')',
           backgroundRepeat: 'no-repeat',
           minHeight: '100vh',
           backgroundAttachment: 'fixed',
         }}
         className={`${geistSans.variable} ${inter.className} antialiased`}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

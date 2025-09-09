@@ -23,8 +23,8 @@ export function SocialCards({ title, subTitle, image, socialUrl }: ISocialCardsP
       >
         <Image src={image} alt={title} width={30} />
         <div className="flex flex-col">
-          <p>{title}</p>
-          <p className="text-[15px] text-[#9A9A9A] md:hidden xl:block">{subTitle}</p>
+          <p className="text-[#252525]">{title}</p>
+          <p className="text-[15px] text-[#9A9A9A] md:hidden xl:block dark:text-[#504e4e]">{subTitle}</p>
         </div>
       </div>
     </a>
