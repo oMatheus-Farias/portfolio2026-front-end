@@ -53,7 +53,7 @@ export default function Home() {
             <div className="mt-4 flex flex-col gap-4 lg:mt-8">
               <h1 className="text-4xl font-bold lg:text-[40px]">Matheus Neves</h1>
 
-              <p className="max-w-[440px] text-base text-[#636363] lg:text-[18px] xl:text-[20px] dark:text-[#D5D5D5]">
+              <p className="max-w-[440px] text-base text-[#636363] lg:text-[18px] dark:text-[#D5D5D5]">
                 👨🏻‍💻 Desenvolvedor full stack, totalmente apaixonado por programação e tecnologia. Ferramentas que mais utilizo são TypeScript, React,
                 Node.js e muito mais!
               </p>
