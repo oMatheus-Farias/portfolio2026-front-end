@@ -3,9 +3,9 @@ import Image from 'next/image';
 import eua2025 from '@/assets/about/eua2025.png';
 import love from '@/assets/about/love.png';
 import rome from '@/assets/about/rome.png';
-import { ActionButton } from '@/components/ActionButton';
 import { DownloadResumeButton } from '@/components/DownloadResumeButton';
 import { HtmlClassVideo } from '@/components/HtmlClassVideo';
+import { LanguageToggle } from '@/components/LanguageToggle';
 import { MePicture } from '@/components/MePicture';
 import { ModeToggle } from '@/components/ModeToggle';
 import { Posts } from '@/components/Posts';
@@ -23,7 +23,6 @@ import gmailIcon from '../assets/social/gmailIcon.png';
 import instagramSocial from '../assets/social/instagramSocial.png';
 import linkedinIcon from '../assets/social/linkedInIcon.png';
 import youtubeIcon from '../assets/social/youtubeIcon.png';
-import usIcon from '../assets/usIcon.png';
 
 export default function Home() {
   const currentYear = new Date().getFullYear();
@@ -44,11 +43,7 @@ export default function Home() {
               <div className="flex items-center justify-center gap-4">
                 <ModeToggle />
 
-                <ActionButton type="button" aria-label="Trocar idioma">
-                  <div className="relative h-5 w-5">
-                    <Image src={usIcon} sizes="20px" alt="Trocar idioma" fill />
-                  </div>
-                </ActionButton>
+                <LanguageToggle />
               </div>
             </div>
 
