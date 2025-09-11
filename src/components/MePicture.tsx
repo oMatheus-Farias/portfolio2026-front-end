@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 import mePicture from '../assets/mePicture.jpg';
 
 export function MePicture() {

@@ -1,5 +1,5 @@
-import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
+import { type StaticImageData } from 'next/image';
 
 export enum SocialCardsTitle {
   LINKEDIN = 'LinkdIn',
@@ -11,7 +11,7 @@ export enum SocialCardsTitle {
 interface ISocialCardsProps {
   title: SocialCardsTitle;
   subTitle: string;
-  image: StaticImport;
+  image: StaticImageData;
   socialUrl: string;
 }
 

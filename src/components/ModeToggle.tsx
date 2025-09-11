@@ -1,12 +1,14 @@
 'use client';
 
-import { useTheme } from 'next-themes';
 import Image from 'next/image';
+import { useTheme } from 'next-themes';
+import { useEffect, useState } from 'react';
+
+import { STORAGE_KEYS } from '@/constants/storageKeys';
+
 import moonIcon from '../assets/moonIcon.png';
 import sunIcon from '../assets/sunIcon.png';
 import { ActionButton } from './ActionButton';
-import { useEffect, useState } from 'react';
-import { STORAGE_KEYS } from '@/constants/storageKeys';
 
 export function ModeToggle() {
   const [themeSeted, setThemeSeted] = useState<string>('light');

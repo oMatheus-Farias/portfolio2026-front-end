@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import eua2025 from '@/assets/about/eua2025.png';
 import love from '@/assets/about/love.png';
 import rome from '@/assets/about/rome.png';
@@ -15,7 +17,7 @@ import { Technologies } from '@/components/Technologies';
 import { posts } from '@/constants/posts';
 import { projects } from '@/constants/projects';
 import { technologies } from '@/constants/technologies';
-import Image from 'next/image';
+
 import githubIcon from '../assets/social/gitHubIcon.png';
 import gmailIcon from '../assets/social/gmailIcon.png';
 import instagramSocial from '../assets/social/instagramSocial.png';
