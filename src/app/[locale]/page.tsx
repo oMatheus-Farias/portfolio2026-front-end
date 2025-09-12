@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import eua2025 from '@/assets/about/eua2025.png';
 import love from '@/assets/about/love.png';
@@ -18,13 +19,14 @@ import { posts } from '@/constants/posts';
 import { projects } from '@/constants/projects';
 import { technologies } from '@/constants/technologies';
 
-import githubIcon from '../assets/social/gitHubIcon.png';
-import gmailIcon from '../assets/social/gmailIcon.png';
-import instagramSocial from '../assets/social/instagramSocial.png';
-import linkedinIcon from '../assets/social/linkedInIcon.png';
-import youtubeIcon from '../assets/social/youtubeIcon.png';
+import githubIcon from '../../assets/social/gitHubIcon.png';
+import gmailIcon from '../../assets/social/gmailIcon.png';
+import instagramSocial from '../../assets/social/instagramSocial.png';
+import linkedinIcon from '../../assets/social/linkedInIcon.png';
+import youtubeIcon from '../../assets/social/youtubeIcon.png';
 
 export default function Home() {
+  const t = useTranslations('Home');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -42,7 +44,6 @@ export default function Home() {
 
               <div className="flex items-center justify-center gap-4">
                 <ModeToggle />
-
                 <LanguageToggle />
               </div>
             </div>
@@ -50,10 +51,7 @@ export default function Home() {
             <div className="mt-4 flex flex-col gap-4 lg:mt-8">
               <h1 className="text-4xl font-bold lg:text-[40px]">Matheus Neves</h1>
 
-              <p className="max-w-[440px] text-base text-[#636363] lg:text-[18px] dark:text-[#D5D5D5]">
-                👨🏻‍💻 Desenvolvedor full stack, totalmente apaixonado por programação e tecnologia. Ferramentas que mais utilizo são TypeScript, React,
-                Node.js e muito mais!
-              </p>
+              <p className="max-w-[440px] text-base text-[#636363] lg:text-[18px] dark:text-[#D5D5D5]">{t('subtitle')}</p>
             </div>
           </div>
 

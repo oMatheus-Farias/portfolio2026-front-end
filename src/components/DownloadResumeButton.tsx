@@ -1,6 +1,10 @@
+import { useTranslations } from 'next-intl';
+
 import { Button } from './ui/Button';
 
 export function DownloadResumeButton() {
+  const t = useTranslations('Home');
+
   return (
     <Button
       style={{
@@ -10,7 +14,7 @@ export function DownloadResumeButton() {
       asChild
     >
       <a href="https://drive.google.com/u/0/uc?id=1UAXtZAoS9PPLrx4gsI6dRIjzJAsOz8Zb&export=download" download>
-        📄 Baixar currículo
+        {t('downloadResumeButton')}
       </a>
     </Button>
   );
