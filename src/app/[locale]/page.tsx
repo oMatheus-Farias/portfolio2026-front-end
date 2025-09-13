@@ -5,6 +5,7 @@ import eua2025 from '@/assets/about/eua2025.png';
 import love from '@/assets/about/love.png';
 import rome from '@/assets/about/rome.png';
 import { DownloadResumeButton } from '@/components/DownloadResumeButton';
+import { FramerMotionAnimate } from '@/components/FramerMotionAnimate';
 import { HtmlClassVideo } from '@/components/HtmlClassVideo';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { MePicture } from '@/components/MePicture';
@@ -30,69 +31,52 @@ export default function Home() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="mx-auto min-h-screen w-full max-w-[510px] p-6 lg:max-w-[1500px] lg:px-16 lg:py-10 2xl:px-28">
+    <FramerMotionAnimate className="mx-auto min-h-screen w-full max-w-[510px] p-6 lg:max-w-[1500px] lg:px-16 lg:py-10 2xl:px-28">
       <main className="flex h-full w-full flex-col gap-24 lg:flex-row lg:justify-between">
         <section className="flex h-full flex-col lg:fixed">
-          <div
-            style={{
-              maxHeight: 'calc(100vh - 120px)',
-            }}
-            className="lg:flex-1"
-          >
+          <div style={{ maxHeight: 'calc(100vh - 120px)' }} className="lg:flex-1">
             <div className="flex items-start gap-6">
               <MePicture />
-
               <div className="flex items-center justify-center gap-4">
                 <ModeToggle />
                 <LanguageToggle />
               </div>
             </div>
-
             <div className="mt-4 flex flex-col gap-4 lg:mt-8">
               <h1 className="text-4xl font-bold lg:text-[40px]">Matheus Neves</h1>
-
               <p className="max-w-[440px] text-base text-[#636363] lg:text-[18px] dark:text-[#D5D5D5]">{t('subtitle')}</p>
             </div>
           </div>
-
           <DownloadResumeButton />
         </section>
-
         <section className="-mt-12 flex w-full max-w-[750px] flex-col lg:mt-0 lg:ml-auto lg:max-w-[550px] xl:max-w-[600px]">
           <div>
             <SecondTitle text={t('technologiesTitle')} />
           </div>
-
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             {technologies.map((tech) => (
               <Technologies key={tech.name} name={tech.name} image={tech.image} />
             ))}
           </ul>
-
           <div className="mt-20">
             <SecondTitle text={t('projectsTitle')} />
           </div>
-
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             {projects.map((project) => (
               <Projects key={project.name} name={project.name} image={project.image} />
             ))}
           </ul>
-
           <div className="mt-20">
             <SecondTitle text={t('postsTitle')} />
           </div>
-
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             {posts.map((posts) => (
               <Posts key={posts.name} name={posts.name} image={posts.image} postUrl={posts.postUrl} />
             ))}
           </ul>
-
           <div className="mt-20">
             <SecondTitle text={t('aboutMeTitle')} />
           </div>
-
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             <li className="flex h-[300px] items-center lg:h-full">
               <div className="grid min-h-full w-full grid-cols-2 grid-rows-2 gap-8">
@@ -125,16 +109,13 @@ export default function Home() {
                 </div>
               </div>
             </li>
-
             <li className="relative aspect-square w-full">
               <HtmlClassVideo />
             </li>
           </ul>
-
           <div className="mt-20">
             <SecondTitle text={t('socialTitle')} />
           </div>
-
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             <li className="aspect-square w-full">
               <a
@@ -153,7 +134,6 @@ export default function Home() {
                 />
               </a>
             </li>
-
             <li className="grid grid-cols-2 grid-rows-2 gap-8">
               <SocialCards
                 title={SocialCardsTitle.LINKEDIN}
@@ -173,11 +153,10 @@ export default function Home() {
           </ul>
         </section>
       </main>
-
       <footer className="mt-14 flex w-full flex-col-reverse items-center justify-center gap-4 sm:flex-row lg:mt-28 lg:ml-auto lg:justify-end lg:gap-8">
         <p className="text-sm text-[#848484] lg:text-base dark:text-[#D5D5D5]">© {currentYear} - Matheus Neves</p>
         <ReturnToTopButton />
       </footer>
-    </div>
+    </FramerMotionAnimate>
   );
 }
