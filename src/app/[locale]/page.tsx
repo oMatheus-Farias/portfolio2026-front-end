@@ -65,7 +65,13 @@ export default function Home() {
           </div>
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             {projects.map((project) => (
-              <Projects key={project.name} name={project.name} image={project.image} />
+              <Projects
+                key={project.name}
+                name={project.name}
+                image={project.image}
+                description={project.description}
+                technologies={project.technologies}
+              />
             ))}
           </ul>
           <div className="mt-20">
@@ -73,7 +79,12 @@ export default function Home() {
           </div>
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
             {posts.map((posts) => (
-              <Posts key={posts.name} name={posts.name} image={posts.image} postUrl={posts.postUrl} />
+              <Posts
+                key={posts.name}
+                name={posts.name}
+                image={posts.image}
+                postUrl={posts.postUrl}
+              />
             ))}
           </ul>
           <div className="mt-20">
@@ -143,8 +154,18 @@ export default function Home() {
                 image={linkedinIcon}
                 socialUrl="https://www.linkedin.com/in/matheusfariasdasneves/"
               />
-              <SocialCards title={SocialCardsTitle.GITHUB} subTitle="github.com" image={githubIcon} socialUrl="https://github.com/oMatheus-Farias" />
-              <SocialCards title={SocialCardsTitle.GMAIL} subTitle="mail.com" image={gmailIcon} socialUrl="mailto:matheusfariasdasneves@gmail.com" />
+              <SocialCards
+                title={SocialCardsTitle.GITHUB}
+                subTitle="github.com"
+                image={githubIcon}
+                socialUrl="https://github.com/oMatheus-Farias"
+              />
+              <SocialCards
+                title={SocialCardsTitle.GMAIL}
+                subTitle="mail.com"
+                image={gmailIcon}
+                socialUrl="mailto:matheusfariasdasneves@gmail.com"
+              />
               <SocialCards
                 title={SocialCardsTitle.YOUTUBE}
                 subTitle="youtube.com"
@@ -156,7 +177,9 @@ export default function Home() {
         </section>
       </main>
       <footer className="mt-14 flex w-full flex-col-reverse items-center justify-center gap-4 sm:flex-row lg:mt-28 lg:ml-auto lg:justify-end lg:gap-8">
-        <p className="text-sm text-[#848484] lg:text-base dark:text-[#D5D5D5]">© {currentYear} - Matheus Neves</p>
+        <p className="text-sm text-[#848484] lg:text-base dark:text-[#D5D5D5]">
+          © {currentYear} - Matheus Neves
+        </p>
         <ReturnToTopButton />
       </footer>
     </FramerMotionAnimate>
