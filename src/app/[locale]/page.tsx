@@ -60,7 +60,7 @@ export default function Home() {
 
         <section className="-mt-12 flex w-full max-w-[750px] flex-col lg:mt-0 lg:ml-auto lg:max-w-[550px] xl:max-w-[600px]">
           <div>
-            <SecondTitle text="Principais tecnologias que utilizo" />
+            <SecondTitle text={t('technologiesTitle')} />
           </div>
 
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
@@ -70,7 +70,7 @@ export default function Home() {
           </ul>
 
           <div className="mt-20">
-            <SecondTitle text="Projetos, principais criados por mim" />
+            <SecondTitle text={t('projectsTitle')} />
           </div>
 
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
@@ -80,7 +80,7 @@ export default function Home() {
           </ul>
 
           <div className="mt-20">
-            <SecondTitle text="Posts, contribuição com a comunidade" />
+            <SecondTitle text={t('postsTitle')} />
           </div>
 
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
@@ -90,7 +90,7 @@ export default function Home() {
           </ul>
 
           <div className="mt-20">
-            <SecondTitle text="Um pouco de mim" />
+            <SecondTitle text={t('aboutMeTitle')} />
           </div>
 
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
@@ -132,7 +132,7 @@ export default function Home() {
           </ul>
 
           <div className="mt-20">
-            <SecondTitle text="Social" />
+            <SecondTitle text={t('socialTitle')} />
           </div>
 
           <ul className="mt-4 grid w-full grid-cols-1 gap-8 lg:grid-cols-2">
