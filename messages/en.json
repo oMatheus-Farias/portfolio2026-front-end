@@ -8,5 +8,16 @@
     "aboutMeTitle": "A little about me",
     "socialTitle": "Social",
     "returnToTopButtonText": "Return to top"
+  },
+  "Projects": {
+    "projectDetailsTitle": "Project details",
+    "descriptionTitle": "👉 Description",
+    "technologiesUsed": "👉 Technologies used",
+    "goodyCosmeticsAdminDescription": "Management system for cosmetics ecommerce",
+    "goodyCosmeticsEcommerceDescription": "Cosmetics ecommerce",
+    "reisFinanceDescription": "Personal finance management system",
+    "fswTripsDescription": "Trip management platform",
+    "fswStoreDescription": "Online store for developer products",
+    "unibusinessDescription": "Business management platform with Power BI integration"
   }
 }

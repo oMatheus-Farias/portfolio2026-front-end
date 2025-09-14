@@ -8,5 +8,16 @@
     "aboutMeTitle": "Um pouco de mim",
     "socialTitle": "Social",
     "returnToTopButtonText": "Voltar ao topo"
+  },
+  "Projects": {
+    "projectDetailsTitle": "Detalhes do projeto",
+    "descriptionTitle": "👉 Descrição",
+    "technologiesUsed": "👉 Tecnologias utilizadas",
+    "goodyCosmeticsAdminDescription": "Sistema de gestão para ecommerce de cosméticos",
+    "goodyCosmeticsEcommerceDescription": "Ecommerce de cosméticos",
+    "reisFinanceDescription": "Sistema de gestão financeira pessoal",
+    "fswTripsDescription": "Plataforma de gestão de viagenss",
+    "fswStoreDescription": "Loja online de produtos para desenvolvedores",
+    "unibusinessDescription": "Plataforma de gestão empresarial com integração com Power BI"
   }
 }

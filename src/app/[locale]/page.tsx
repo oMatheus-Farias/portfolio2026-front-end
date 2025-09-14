@@ -28,6 +28,7 @@ import youtubeIcon from '../../assets/social/youtubeIcon.png';
 
 export default function Home() {
   const t = useTranslations('Home');
+  const tProjects = useTranslations('Projects');
   const currentYear = new Date().getFullYear();
 
   return (
@@ -69,7 +70,7 @@ export default function Home() {
                 key={project.name}
                 name={project.name}
                 image={project.image}
-                description={project.description}
+                description={tProjects(project.description)}
                 technologies={project.technologies}
               />
             ))}

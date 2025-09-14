@@ -9,37 +9,37 @@ export const projects = [
   {
     name: 'Goody Cosméticos Admin',
     image: goodyCosmeticsAdmin,
-    description: 'Sistema de gestão para ecommerce de cosméticos',
+    description: 'goodyCosmeticsAdminDescription',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Node.js', 'Fastify', 'PostgreSQL'],
   },
   {
     name: 'Goody Cosméticos Ecommerce',
     image: goodyCosmeticsEcommerce,
-    description: 'Ecommerce de cosméticos',
+    description: 'goodyCosmeticsEcommerceDescription',
     technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Node.js', 'Fastify', 'PostgreSQL'],
   },
   {
     name: 'Reis Finance',
     image: reisFinance,
-    description: 'Plataforma de gestão financeira',
+    description: 'reisFinanceDescription',
     technologies: ['React', 'TypeScript', 'TailwindCSS', 'Node.js', 'Express', 'PostgreSQL'],
   },
   {
     name: 'FSW Trips',
     image: fswTrips,
-    description: 'Plataforma de gestão de viagens',
+    description: 'fswTripsDescription',
     technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'PostgreSQL'],
   },
   {
     name: 'FSW Store',
     image: fswStore,
-    description: 'Ecommerce de produtos variados',
+    description: 'fswStoreDescription',
     technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'PostgreSQL'],
   },
   {
     name: 'Unibusiness',
     image: unibusiness,
-    description: 'Plataforma de gestão empresarial com integração com Power BI',
+    description: 'unibusinessDescription',
     technologies: [
       'React',
       'TypeScript',

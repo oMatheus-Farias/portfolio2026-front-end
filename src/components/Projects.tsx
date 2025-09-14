@@ -1,4 +1,5 @@
 import Image, { type StaticImageData } from 'next/image';
+import { useTranslations } from 'next-intl';
 
 import { Badge } from './ui/Badge';
 import {
@@ -18,6 +19,8 @@ interface IProjectsProps {
 }
 
 export function Projects({ name, image, description, technologies }: IProjectsProps) {
+  const t = useTranslations('Projects');
+
   return (
     <li className="w-full">
       <Dialog>
@@ -58,16 +61,16 @@ export function Projects({ name, image, description, technologies }: IProjectsPr
 
             <div className="mt-6 h-full overflow-hidden rounded-2xl">
               <div className="border-b border-[#E9E9E9] bg-[#F9F9F9] p-6 dark:border-[#323232] dark:bg-[#232323]">
-                <h3 className="font-semibold">Detalhes do projeto</h3>
+                <h3 className="font-semibold">{t('projectDetailsTitle')}</h3>
               </div>
 
               <div className="mt-8 flex w-full flex-col gap-4 px-6">
-                <h4 className="text-base font-medium">👉 Descrição</h4>
+                <h4 className="text-base font-medium">{t('descriptionTitle')}</h4>
                 <p className="text-sm text-[#636363] dark:text-[#D5D5D5]">{description}</p>
               </div>
 
               <div className="mt-8 flex w-full flex-col gap-4 px-6">
-                <h4 className="text-base font-medium">👉 Tecnologias utilizadas</h4>
+                <h4 className="text-base font-medium">{t('technologiesUsed')}</h4>
                 <div className="flex flex-wrap items-center gap-2">
                   {technologies.map((tech) => (
                     <Badge key={tech} variant="outline">
