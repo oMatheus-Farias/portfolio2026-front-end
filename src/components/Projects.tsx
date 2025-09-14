@@ -33,7 +33,7 @@ export function Projects({ name, image, description, technologies }: IProjectsPr
             className="rounded-3xl border border-[##dbdbdb] shadow-md transition-all duration-200 hover:cursor-pointer hover:opacity-90 hover:shadow-lg dark:border-[#2B2B2B]"
           />
         </DialogTrigger>
-        <DialogContent className="h-[90%] max-h-[700px] overflow-hidden rounded-[32px] border-[4px] px-0 pt-0">
+        <DialogContent className="h-[90%] max-h-[700px] overflow-hidden overflow-y-scroll rounded-[32px] border-[4px] px-0 pt-0 md:overflow-y-hidden">
           <div
             style={{
               backgroundImage: `
@@ -53,7 +53,7 @@ export function Projects({ name, image, description, technologies }: IProjectsPr
             className="h-[250px] w-full"
           ></div>
 
-          <div className="-mt-36 px-12">
+          <div className="-mt-24 px-12">
             <DialogHeader>
               <DialogTitle className="text-3xl font-bold">{name}</DialogTitle>
               <DialogDescription className="sr-only">{description}</DialogDescription>
@@ -61,15 +61,17 @@ export function Projects({ name, image, description, technologies }: IProjectsPr
 
             <div className="mt-6 h-full overflow-hidden rounded-2xl">
               <div className="border-b border-[#E9E9E9] bg-[#F9F9F9] p-6 dark:border-[#323232] dark:bg-[#232323]">
-                <h3 className="font-semibold">{t('projectDetailsTitle')}</h3>
+                <h3 className="text-center font-semibold lg:text-left">
+                  {t('projectDetailsTitle')}
+                </h3>
               </div>
 
-              <div className="mt-8 flex w-full flex-col gap-4 px-6">
+              <div className="mt-8 flex w-full flex-col gap-4 px-2 md:px-6">
                 <h4 className="text-base font-medium">{t('descriptionTitle')}</h4>
                 <p className="text-sm text-[#636363] dark:text-[#D5D5D5]">{description}</p>
               </div>
 
-              <div className="mt-8 flex w-full flex-col gap-4 px-6">
+              <div className="mt-8 flex w-full flex-col gap-4 px-2 md:px-6">
                 <h4 className="text-base font-medium">{t('technologiesUsed')}</h4>
                 <div className="flex flex-wrap items-center gap-2">
                   {technologies.map((tech) => (
