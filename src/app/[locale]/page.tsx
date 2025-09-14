@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-import eua2025 from '@/assets/about/eua2025.png';
+import eua2025 from '@/assets/about/eua2025.webp';
 import love from '@/assets/about/love.png';
 import rome from '@/assets/about/rome.png';
 import { DownloadResumeButton } from '@/components/DownloadResumeButton';
