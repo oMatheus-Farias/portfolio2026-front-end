@@ -1,9 +1,9 @@
-import fswStore from '@/assets/projects/fswStore.png';
-import fswTrips from '@/assets/projects/fswTrips.png';
-import goodyCosmeticsAdmin from '@/assets/projects/goodyCosmeticsAdmin.png';
-import goodyCosmeticsEcommerce from '@/assets/projects/goodyCosmeticsEcommerce.png';
-import reisFinance from '@/assets/projects/reisFinance.png';
-import unibusiness from '@/assets/projects/unibusiness.png';
+import fswStore from '@/assets/projects/fswStore.webp';
+import fswTrips from '@/assets/projects/fswTrips.webp';
+import goodyCosmeticsAdmin from '@/assets/projects/goodyCosmeticsAdmin.webp';
+import goodyCosmeticsEcommerce from '@/assets/projects/goodyCosmeticsEcommerce.webp';
+import reisFinance from '@/assets/projects/reisFinance.webp';
+import unibusiness from '@/assets/projects/unibusiness.webp';
 
 export const projects = [
   {

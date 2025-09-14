@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
 import eua2025 from '@/assets/about/eua2025.webp';
-import love from '@/assets/about/love.png';
-import rome from '@/assets/about/rome.png';
+import love from '@/assets/about/love.webp';
+import rome from '@/assets/about/rome.webp';
 import { DownloadResumeButton } from '@/components/DownloadResumeButton';
 import { FramerMotionAnimate } from '@/components/FramerMotionAnimate';
 import { HtmlClassVideo } from '@/components/HtmlClassVideo';
