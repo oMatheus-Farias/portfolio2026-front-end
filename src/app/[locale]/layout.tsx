@@ -21,14 +21,24 @@ export const metadata: Metadata = {
   description: 'Portfólio de Matheus Neves - Desenvolvedor Full-stack',
 };
 
-export default async function RootLayout(props: Readonly<{ children: React.ReactNode; params: { locale: string } }>) {
-  const { children, params } = props;
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
   const { locale } = await params;
 
   return (
     <html lang={locale} suppressHydrationWarning>
       <body className={`${geistSans.variable} ${inter.className} pattern-bg antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <IntlProviderWrapper locale={locale}>{children}</IntlProviderWrapper>
         </ThemeProvider>
       </body>
