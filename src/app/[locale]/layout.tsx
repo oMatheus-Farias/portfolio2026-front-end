@@ -35,7 +35,7 @@ export default async function RootLayout({
       <body className={`${geistSans.variable} ${inter.className} pattern-bg antialiased`}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
