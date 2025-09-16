@@ -61,7 +61,7 @@ export function Projects({ name, image, description, technologies }: IProjectsPr
 
             <div className="mt-6 h-full overflow-hidden rounded-2xl">
               <div className="border-b border-[#E9E9E9] bg-[#F9F9F9] p-6 dark:border-[#323232] dark:bg-[#232323]">
-                <h3 className="text-center font-semibold lg:text-left">
+                <h3 className="text-center text-[18px] font-semibold lg:text-left">
                   {t('projectDetailsTitle')}
                 </h3>
               </div>
