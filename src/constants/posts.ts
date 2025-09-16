@@ -1,9 +1,9 @@
-import asyncAwait from '@/assets/posts/asyncAwait.png';
-import orms from '@/assets/posts/orms.png';
-import questions from '@/assets/posts/questions.png';
-import sessionStorage from '@/assets/posts/sessionStorage.png';
-import typesAndInterfaces from '@/assets/posts/typesAndInterfaces.png';
-import vsCode from '@/assets/posts/vsCode.png';
+import asyncAwait from '@/assets/posts/asyncAwait.webp';
+import orms from '@/assets/posts/orms.webp';
+import questions from '@/assets/posts/questions.webp';
+import sessionStorage from '@/assets/posts/sessionStorage.webp';
+import typesAndInterfaces from '@/assets/posts/typesAndInterfaces.webp';
+import vsCode from '@/assets/posts/vsCode.webp';
 
 export const posts = [
   {

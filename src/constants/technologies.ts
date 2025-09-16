@@ -1,9 +1,9 @@
-import javaScript from '@/assets/technologies/javaScript.png';
-import next from '@/assets/technologies/next.png';
-import node from '@/assets/technologies/node.png';
-import postgreSql from '@/assets/technologies/postgreSql.png';
-import react from '@/assets/technologies/react.png';
-import typeScript from '@/assets/technologies/typeScript.png';
+import javaScript from '@/assets/technologies/javaScript.webp';
+import next from '@/assets/technologies/next.webp';
+import node from '@/assets/technologies/node.webp';
+import postgreSql from '@/assets/technologies/postgreSql.webp';
+import react from '@/assets/technologies/react.webp';
+import typeScript from '@/assets/technologies/typeScript.webp';
 
 export const technologies = [
   {

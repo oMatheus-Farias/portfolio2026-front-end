@@ -20,11 +20,11 @@ import { posts } from '@/constants/posts';
 import { projects } from '@/constants/projects';
 import { technologies } from '@/constants/technologies';
 
-import githubIcon from '../../assets/social/gitHubIcon.png';
-import gmailIcon from '../../assets/social/gmailIcon.png';
-import instagramSocial from '../../assets/social/instagramSocial.png';
-import linkedinIcon from '../../assets/social/linkedInIcon.png';
-import youtubeIcon from '../../assets/social/youtubeIcon.png';
+import githubIcon from '../../assets/social/gitHubIcon.webp';
+import gmailIcon from '../../assets/social/gmailIcon.webp';
+import instagramSocial from '../../assets/social/instagramSocial.webp';
+import linkedinIcon from '../../assets/social/linkedInIcon.webp';
+import youtubeIcon from '../../assets/social/youtubeIcon.webp';
 
 export default function Home() {
   const t = useTranslations('Home');

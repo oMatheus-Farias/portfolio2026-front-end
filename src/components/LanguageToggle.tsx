@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react';
 import { STORAGE_KEYS } from '@/constants/storageKeys';
 import { usePathname, useRouter } from '@/navigation';
 
-import brIcon from '../assets/brIcon.png';
-import usIcon from '../assets/usIcon.png';
+import brIcon from '../assets/brIcon.webp';
+import usIcon from '../assets/usIcon.webp';
 import { ActionButton } from './ActionButton';
 
 export function LanguageToggle() {
@@ -30,9 +30,20 @@ export function LanguageToggle() {
   }
 
   return (
-    <ActionButton type="button" aria-label="Trocar idioma" hoverMessage={buttonText} onClick={() => toggleLanguage(locale === 'pt' ? 'en' : 'pt')}>
+    <ActionButton
+      type="button"
+      aria-label="Trocar idioma"
+      hoverMessage={buttonText}
+      onClick={() => toggleLanguage(locale === 'pt' ? 'en' : 'pt')}
+    >
       <div className="relative h-5 w-5">
-        <Image src={locale === 'pt' ? usIcon.src : brIcon.src} alt="Trocar idioma" width={20} height={20} className="h-5 w-5" />
+        <Image
+          src={locale === 'pt' ? usIcon.src : brIcon.src}
+          alt="Trocar idioma"
+          width={20}
+          height={20}
+          className="h-5 w-5"
+        />
       </div>
     </ActionButton>
   );

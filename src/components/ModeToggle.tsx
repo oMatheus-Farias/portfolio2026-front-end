@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react';
 
 import { STORAGE_KEYS } from '@/constants/storageKeys';
 
-import moonIcon from '../assets/moonIcon.png';
-import sunIcon from '../assets/sunIcon.png';
+import moonIcon from '../assets/moonIcon.webp';
+import sunIcon from '../assets/sunIcon.webp';
 import { ActionButton } from './ActionButton';
 
 export function ModeToggle() {
@@ -42,7 +42,12 @@ export function ModeToggle() {
       }}
     >
       <div className="relative h-4 w-4">
-        <Image src={themeSeted === 'dark' ? sunIcon : moonIcon} sizes="16px" alt="Trocar tema" fill />
+        <Image
+          src={themeSeted === 'dark' ? sunIcon : moonIcon}
+          sizes="16px"
+          alt="Trocar tema"
+          fill
+        />
       </div>
     </ActionButton>
   );
